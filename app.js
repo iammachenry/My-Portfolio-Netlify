@@ -226,7 +226,7 @@ if (contactForm) {
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
     
     try {
-      const response = await axios.post('/.netlify/functions/contact', data);
+      const response = await axios.post('/api/contact', data);
       
       if (response.data.success) {
         formMessage.className = 'bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg';
