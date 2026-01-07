@@ -180,6 +180,19 @@
             }
           }
           
+          .badge-glow {
+            animation: badgeGlow 2s ease-in-out infinite;
+          }
+          
+          @keyframes badgeGlow {
+            0%, 100% {
+              box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4), 0 0 40px rgba(59, 130, 246, 0.2);
+            }
+            50% {
+              box-shadow: 0 4px 30px rgba(59, 130, 246, 0.6), 0 0 60px rgba(59, 130, 246, 0.3);
+            }
+          }
+          
           .stat-card {
             transition: all 0.3s ease;
             position: relative;
@@ -282,13 +295,13 @@
                                      alt="Henry Imafidon - Salesforce Administrator & Implementation Specialist" 
                                      class="w-full h-full object-cover">
                             </div>
-                            <!-- Floating Badge -->
-                            <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-white rounded-full px-5 py-2 shadow-xl">
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-7 h-7 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center">
-                                        <i class="fas fa-cloud text-white text-sm"></i>
+                            <!-- Floating Badge - Enhanced with Gradient, Glow & Animation -->
+                            <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 rounded-full px-6 py-3 shadow-2xl badge-glow">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                                        <i class="fas fa-cloud text-blue-600 text-base"></i>
                                     </div>
-                                    <span class="text-gray-900 font-bold text-sm">6X Salesforce Certified</span>
+                                    <span class="text-white font-bold text-base">6X Salesforce Certified</span>
                                 </div>
                             </div>
                         </div>
