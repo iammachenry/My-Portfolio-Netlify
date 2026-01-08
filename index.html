@@ -282,22 +282,79 @@
             </div>
         </nav>
 
-        <!-- Hero Section - Full Dashboard Image (No Overlays - Image Has Everything) -->
-        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 to-blue-900">
-            <!-- Full Salesforce Dashboard Image - Contains Photo, Badge, Headline, CTAs -->
-            <div class="relative w-full h-full flex items-center justify-center">
+        <!-- Hero Section - WITH GREEN BACKGROUND -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-600 to-teal-700">
+            <!-- Dashboard Background Image (Subtle) -->
+            <div class="absolute inset-0 opacity-20">
                 <img 
                     src="/henry-salesforce-dashboard.jpg" 
-                    alt="Henry Imafidon - Salesforce Administrator & Implementation Specialist" 
-                    class="w-full h-auto max-h-screen object-contain"
+                    alt="Dashboard Background" 
+                    class="w-full h-full object-cover"
                 />
             </div>
+            
+            <!-- Gradient Overlay for Readability -->
+            <div class="absolute inset-0 bg-gradient-to-br from-green-600/80 via-teal-700/70 to-green-800/80" />
 
-            <!-- Minimal Scroll Indicator (Bottom Only) -->
-            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
-                <a href="#proven-results" class="text-white/90 hover:text-white transition drop-shadow-2xl">
-                    <i class="fas fa-chevron-down text-4xl"></i>
-                </a>
+            <!-- Hero Content Overlay -->
+            <div class="relative z-10 w-full px-4 sm:px-6 lg:px-8 pb-20 pt-32">
+                <div class="max-w-7xl mx-auto">
+                    <!-- Your Professional Photo -->
+                    <div class="flex justify-center mb-8" data-aos="fade-down">
+                        <div class="relative">
+                            <img 
+                                src="/henry-salesforce-dashboard.jpg" 
+                                alt="Henry Imafidon - Salesforce Administrator & Implementation Specialist" 
+                                class="w-64 md:w-80 rounded-2xl shadow-2xl border-4 border-white/30"
+                            />
+                            <!-- 6X Certified Badge -->
+                            <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
+                                <div class="inline-block bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 rounded-full px-6 py-3 shadow-2xl badge-glow">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                                            <i class="fas fa-cloud text-blue-600 text-base"></i>
+                                        </div>
+                                        <span class="text-white font-bold text-lg">6X Certified</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dramatic Multi-line Headline -->
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-white max-w-5xl text-center mx-auto mt-8" data-aos="fade-up" data-aos-delay="100">
+                        I Design & Implement<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-100">Enterprise-Grade Salesforce Solutions</span><br>
+                        <span class="text-blue-100">That Scale Operations & Elevate Customer Experience</span>
+                    </h1>
+                    
+                    <!-- Brief Value Sentence -->
+                    <p class="text-xl md:text-2xl mb-12 leading-relaxed text-white/95 max-w-3xl text-center mx-auto" data-aos="fade-up" data-aos-delay="200">
+                        Certified Salesforce professional helping businesses streamline operations and deliver better customer experiences.
+                    </p>
+                    
+                    <!-- Two Primary CTAs -->
+                    <div class="flex flex-wrap gap-6 justify-center" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#completed-projects" class="bg-white text-green-700 px-10 py-5 rounded-lg text-lg font-semibold inline-flex items-center shadow-2xl hover:scale-105 hover:shadow-3xl transition-all duration-300">
+                            <i class="fas fa-folder-open mr-3"></i>
+                            View Projects
+                        </a>
+                        <a href="https://drive.google.com/file/d/1srpFAplJVJj4yO4mg4zWlYO2IfZdG-Ra/view?usp=sharing" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="bg-blue-600 text-white px-10 py-5 rounded-lg text-lg font-semibold inline-flex items-center hover:bg-blue-700 transition shadow-2xl hover:scale-105 transition-all duration-300">
+                            <i class="fas fa-file-alt mr-3"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                    <a href="#proven-results" class="text-white/70 hover:text-white transition">
+                        <i class="fas fa-chevron-down text-3xl"></i>
+                    </a>
+                </div>
             </div>
         </section>
 
