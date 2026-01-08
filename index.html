@@ -282,80 +282,20 @@
             </div>
         </nav>
 
-        <!-- Hero Section with Professional Photo and Dashboard Background -->
-        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-            <!-- Salesforce Dashboard Background (Blurred) -->
-            <div class="absolute inset-0 z-0">
-                <img src="/salesforce-dashboard-background.jpg" 
-                     alt="Salesforce Dashboard Background" 
-                     class="w-full h-full object-cover object-center blur-sm opacity-30">
-                <!-- Gradient Overlay -->
-                <div class="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-indigo-900/85 to-purple-900/90"></div>
-            </div>
+        <!-- Hero Section - Full Dashboard Image (No Overlays - Image Has Everything) -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 to-blue-900">
+            <!-- Full Salesforce Dashboard Image - Contains Photo, Badge, Headline, CTAs -->
+            <img 
+                src="/henry-salesforce-dashboard.jpg" 
+                alt="Henry Imafidon - Salesforce Administrator & Implementation Specialist" 
+                class="absolute inset-0 w-full h-full object-cover object-center"
+            />
 
-            <!-- Hero Content with Photo -->
-            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    
-                    <!-- Left Column: Professional Headshot -->
-                    <div class="flex justify-center lg:justify-end" data-aos="fade-right">
-                        <div class="relative">
-                            <!-- Professional Photo -->
-                            <div class="w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
-                                <img src="/henry-professional-headshot.jpg" 
-                                     alt="Henry Imafidon - Salesforce Administrator & Implementation Specialist" 
-                                     class="w-full h-full object-cover">
-                            </div>
-                            <!-- Badge Below Photo -->
-                            <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 rounded-full px-6 py-3 shadow-2xl badge-glow">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                                        <i class="fas fa-cloud text-blue-600 text-base"></i>
-                                    </div>
-                                    <span class="text-white font-bold text-lg">6X Salesforce Certified</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Column: Content -->
-                    <div class="text-white text-center lg:text-left" data-aos="fade-left">
-                        <!-- Dramatic Multi-line Headline -->
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                            I Design & Implement<br>
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-green-300">Enterprise-Grade Salesforce Solutions</span><br>
-                            <span class="text-yellow-300">That Scale Operations & Elevate Customer Experience</span>
-                        </h1>
-                        
-                        <!-- Brief Value Sentence -->
-                        <p class="text-xl md:text-2xl mb-10 leading-relaxed text-white/90">
-                            Certified Salesforce professional helping businesses streamline operations and deliver better customer experiences.
-                        </p>
-                        
-                        <!-- Two Primary CTAs -->
-                        <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
-                            <a href="#completed-projects" class="bg-gradient-to-r from-green-500 to-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center shadow-2xl hover:scale-105 transition-all duration-300">
-                                <i class="fas fa-folder-open mr-3"></i>
-                                View Projects
-                            </a>
-                            <a href="https://drive.google.com/file/d/1srpFAplJVJj4yO4mg4zWlYO2IfZdG-Ra/view?usp=sharing" 
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               class="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center hover:bg-gray-100 transition shadow-2xl hover:scale-105 transition-all duration-300">
-                                <i class="fas fa-file-alt mr-3"></i>
-                                Download Resume
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Scroll Indicator -->
-                <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce" data-aos="fade-up" data-aos-delay="300">
-                    <a href="#proven-results" class="text-white/70 hover:text-white transition">
-                        <i class="fas fa-chevron-down text-3xl"></i>
-                    </a>
-                </div>
+            <!-- Minimal Scroll Indicator (Bottom Only) -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
+                <a href="#proven-results" class="text-white/90 hover:text-white transition drop-shadow-2xl">
+                    <i class="fas fa-chevron-down text-4xl"></i>
+                </a>
             </div>
         </section>
 
