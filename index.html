@@ -296,43 +296,51 @@
             <!-- Gradient Overlay for Readability (LIGHTER) -->
             <div class="absolute inset-0 bg-gradient-to-br from-green-600/60 via-teal-700/50 to-green-800/60" />
 
-            <!-- Hero Content Overlay - MOBILE OPTIMIZED (COMPACT) -->
+            <!-- Hero Content Overlay - TWO COLUMN LAYOUT (PHOTO LEFT, CONTENT RIGHT) -->
             <div class="relative z-10 w-full px-3 sm:px-6 lg:px-8 py-16 pt-20 md:pt-32">
                 <div class="max-w-7xl mx-auto">
-                    <!-- Your Professional Photo - MOBILE COMPACT -->
-                    <div class="flex justify-center mb-4 md:mb-8" data-aos="fade-down">
-                        <img 
-                            src="/henry-salesforce-dashboard.jpg" 
-                            alt="Henry Imafidon - Salesforce Administrator & Implementation Specialist" 
-                            class="w-48 sm:w-56 md:w-80 lg:w-96 rounded-2xl shadow-2xl border-4 border-white/30"
-                        />
-                    </div>
-                    
-                    <!-- Value-Driven Sentence - COMPACT ON MOBILE (WITH YELLOW HIGHLIGHTS) -->
-                    <h1 class="text-lg sm:text-xl md:text-3xl lg:text-4xl mb-4 md:mb-6 leading-tight text-white max-w-4xl text-center mx-auto px-2 font-bold" data-aos="fade-up" data-aos-delay="100">
-                        Helping organizations <span class="text-yellow-300">scale operations</span>, <span class="text-yellow-300">improve customer experience</span>, and <span class="text-yellow-300">drive efficiency</span> through well-architected Salesforce solutions.
-                    </h1>
-                    
-                    <!-- Brief Personal Intro - SMALLER ON MOBILE (WITH YELLOW HIGHLIGHTS) -->
-                    <p class="text-sm sm:text-base md:text-lg lg:text-xl mb-6 md:mb-8 leading-relaxed text-white max-w-3xl text-center mx-auto px-2 font-medium" data-aos="fade-up" data-aos-delay="150">
-                        I'm <span class="text-yellow-300">Henry Imafidon</span>, a certified <span class="text-yellow-300">Salesforce Admin & Implementation Consultant</span> and <span class="text-yellow-300">CX professional</span> who transforms complex business challenges into <span class="text-yellow-300">streamlined, scalable solutions</span> that drive measurable results.
-                    </p>
-                    
-                    <!-- Two Primary CTAs - COMPACT ON MOBILE -->
-                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center px-2" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#completed-projects" class="bg-white text-green-700 px-5 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 rounded-lg text-sm sm:text-base md:text-lg font-semibold inline-flex items-center justify-center shadow-2xl hover:scale-105 hover:shadow-3xl transition-all duration-300">
-                            <i class="fas fa-folder-open mr-2"></i>
-                            View Projects
-                        </a>
-                        <a href="#services" class="bg-blue-600 text-white px-5 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 rounded-lg text-sm sm:text-base md:text-lg font-semibold inline-flex items-center justify-center hover:bg-blue-700 transition shadow-2xl hover:scale-105 transition-all duration-300">
-                            <i class="fas fa-cogs mr-2"></i>
-                            View Services
-                        </a>
+                    <!-- Two Column Grid: Photo Left, Content Right -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                        
+                        <!-- LEFT: Professional Photo -->
+                        <div class="flex justify-center lg:justify-end" data-aos="fade-right">
+                            <img 
+                                src="/henry-salesforce-dashboard.jpg" 
+                                alt="Henry Imafidon - Salesforce Administrator & Implementation Specialist" 
+                                class="w-64 sm:w-72 md:w-80 lg:w-96 rounded-2xl shadow-2xl border-4 border-white/30"
+                            />
+                        </div>
+                        
+                        <!-- RIGHT: Content -->
+                        <div class="flex flex-col justify-center" data-aos="fade-left">
+                            <!-- Value-Driven Sentence (WITH YELLOW HIGHLIGHTS) -->
+                            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6 leading-tight text-white font-bold text-center lg:text-left">
+                                Helping organizations <span class="text-yellow-300">scale operations</span>, <span class="text-yellow-300">improve customer experience</span>, and <span class="text-yellow-300">drive efficiency</span> through well-architected Salesforce solutions.
+                            </h1>
+                            
+                            <!-- Brief Personal Intro (WITH YELLOW HIGHLIGHTS) -->
+                            <p class="text-base sm:text-lg md:text-xl mb-6 md:mb-8 leading-relaxed text-white font-medium text-center lg:text-left">
+                                I'm <span class="text-yellow-300">Henry Imafidon</span>, a certified <span class="text-yellow-300">Salesforce Admin & Implementation Consultant</span> and <span class="text-yellow-300">CX professional</span> who transforms complex business challenges into <span class="text-yellow-300">streamlined, scalable solutions</span> that drive measurable results.
+                            </p>
+                            
+                            <!-- Two Primary CTAs -->
+                            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+                                <a href="#completed-projects" class="bg-white text-green-700 px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-sm sm:text-base md:text-lg font-semibold inline-flex items-center justify-center shadow-2xl hover:scale-105 hover:shadow-3xl transition-all duration-300">
+                                    <i class="fas fa-folder-open mr-2"></i>
+                                    View Projects
+                                </a>
+                                <a href="#services" class="bg-blue-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-sm sm:text-base md:text-lg font-semibold inline-flex items-center justify-center hover:bg-blue-700 transition shadow-2xl hover:scale-105 transition-all duration-300">
+                                    <i class="fas fa-cogs mr-2"></i>
+                                    View Services
+                                </a>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
 
-                <!-- Scroll Indicator - COMPACT ON MOBILE -->
-                <div class="mt-6 md:mt-12 flex justify-center">
+                <!-- Scroll Indicator -->
+                <div class="mt-8 md:mt-12 flex justify-center">
                     <a href="#proven-results" class="text-white/70 hover:text-white transition animate-bounce">
                         <i class="fas fa-chevron-down text-xl md:text-3xl"></i>
                     </a>
